@@ -1,0 +1,949 @@
+/*
+	reset
+/*
+/*	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+	clearfix
+*/
+
+.clearfix:after {
+	content: " ";
+	clear: both;
+	display: block;
+	font-size: 0;
+	height: 0;
+	visibility: hidden;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/*
+	main
+*/
+
+a, a:link {
+	background-color: #d6e4f5;
+	color: #0a50a1;
+	font-weight: bold;
+	padding: 0.01em 0.1em;
+}
+
+a:visited {
+	background-color: transparent;
+	color: #0a50a1;
+}
+
+a:hover, a:active, a:focus {
+	background-color: #0a50a1;
+	color: #ffffff;
+}
+
+blockquote {
+	font-size: 90%;
+	border-left: 1px solid #000000;
+	padding-left: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+blockquote ol li {
+	padding: 0.25em 0;
+}
+
+body {
+	font-size: 90%;
+	line-height: 150%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	position: relative;
+}
+
+body, a, h1, h2, h3, table {
+	font-family: palatino, georgia, 
+						"Lucida Sans Unicode", "Lucida Grande",
+						serif;
+}
+
+caption {
+	background-color: #0a50a1;
+	color: #ffffff;
+	font-weight: bold;
+	margin: 2em 0 0 0;
+	padding: 0.5em 0;
+}
+
+dd {
+	width: 16em;
+}
+
+dl {
+	text-align: left;
+}
+
+dt {
+	clear: left;
+	width: 10em;
+}
+
+dt, dd {
+	border: 0 solid #ff0000;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 150%!important;
+	margin: 2.5em 0 0.5em 1.33em;
+}
+
+h1, h2 {
+	background-color: transparent;
+	color: #0a50a1;
+	font-weight: bold!important;
+}
+
+h1, h2, h3 {
+	text-align: left;
+	line-height: 1.33;
+}
+
+h2 {
+	font-size: 125%!important;
+	margin: 1.5em 0 0 1.6em;
+}
+
+h3 {
+	font-size: 110%;
+	margin: 1em 0 0 1em;
+}
+
+img {
+	border: none;
+	border-style: solid;
+}
+
+noscript p {
+	text-align: center;
+	font-size: 75%;
+	background-color: #0a50a1;
+	color: #d6e4f5;
+}
+
+p {
+	background-color: transparent;
+	color: #000000;
+	margin: 0.5em 0;
+}
+
+p #anchors {
+	margin-top: 0;
+}
+
+table {
+	background-color: #ffffff;
+	border: 2px solid #0a50a1;
+	border-collapse: collapse;
+	color: #000000;
+	font-family: arial, sans-serif;
+	font-size: 90%;
+	margin: 2em 0 1em 0;
+	width: 100%;
+}
+
+td {
+	border-color: #d6e4f5;
+	border-style: solid;
+	border-width: 0 0 1px 1px;
+}
+
+td, th {
+	padding: 0.25em 1.25em;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+td.jl, th.jl {
+	text-align: left;
+}
+
+th {
+	background-color: #0a50a1;
+	color: #ffffff;
+}
+
+ul {
+	list-style: disc;
+}
+
+.attention {
+	background-color: #0a50a1;
+	color: #ffffff;
+	font-size: 1.5em;
+	left: 0;
+	margin: 0;
+	padding: 0.75em 0;
+	word-spacing: 0.2em;
+	text-align: center;
+	width: 100%;
+}
+
+.content {
+	margin: 0 auto;
+	max-width: 1600px;
+	min-width: 400px;
+	text-align: left;
+	width: 55.4em;
+}
+
+.diffdown {
+	background-image: url(../i/diffdown.gif);
+}
+
+.diffdown, .diffeq, .diffup {
+	background-position: 80% 66%;
+	background-repeat: no-repeat;
+}
+
+.diffeq {
+	background-image: url(../i/diffeq.gif);
+}
+
+.diffup {
+	background-image: url(../i/diffup.gif);
+}
+
+.gallery {
+	margin: 0 auto;
+	padding: 0;
+	width: 48em;
+}
+
+.gallery a {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.gallery a, .gallery a:hover {
+	background-color: transparent;
+}
+
+.gallery img {
+	border: none;
+	padding: 1em 0 0 0;
+	width: 100%;
+}
+
+.gallery li {
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 14em;
+}
+
+.gallery ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.imgfullw {
+	border: none;
+	width: 100%;
+}
+
+.imgperson {
+	border: 1px solid #d6e4f5;
+	float: right;
+	margin: 0 0 2em 1em;
+	width: 15em;
+}
+
+.light {
+	background-color: transparent;
+	color: #888888;
+}
+
+.nonq td {
+	border-top: 2px solid #0a50a1;
+}
+
+.partnerdesc {
+	float: right;
+	margin: 2em 0 2em 0;
+	width: 30em;
+}
+
+.partnerdesc h3 {
+	margin: 0 0 0.5em 0;
+}
+
+.partnerlogo {
+	border: none;
+	float: left;
+	margin: 2em 0 2em 0;
+}
+
+.partners #main ul {
+	margin: 0.5em 0 1em 1em;
+}
+
+.partners hr {
+	background-color: transparent;
+	color: #0a50a1;
+}
+
+.polana dd {
+	width: 32em;
+}
+
+.polana dl, .polana dt, .polana dd {
+	margin: 0;
+	padding: 0;
+}
+
+.polana dt {
+	font-weight: bold;
+	width: 14em;
+}
+
+.shade {
+	background-color: #d6e4f5;
+	color: #000000;
+}
+
+.shade td {
+	background-color: #d6e4f5;
+	border-color: #ffffff;
+	color: #000000;
+}
+
+.signature {
+	text-indent: 0;
+	font-style: italic;
+}
+
+.sitemap #main li {
+	font-size: 90%;
+	font-weight: bold;
+	margin: 0;
+	padding: 0.2em 0 0.2em 2.5em;
+}
+
+.sitemap #main li a {
+	background-color: transparent;
+	color: #1a9431;
+}
+
+.sitemap #main li a:hover {
+	background-color: #1a9431;
+	color: #ffffff;
+}
+
+.sitemap #main li ul {
+	border-left: 2px dotted #1a9431;
+}
+
+.sitemap #main li ul li {
+	background-color: transparent;
+	color: #000000;
+	font-size: 100%;
+	margin: 0;
+	padding: 0.2em 0 0.2em 2.5em;
+}
+
+.sitemap #main li ul li a {
+	background-color: transparent;
+	color: #000000;
+	font-weight: normal;
+}
+
+.sitemap #main li ul li a:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.sitemap #main li ul li ul {
+	border-left: 1px dotted #000000;
+}
+
+.sitemap #main li ul li ul li {
+	background-color: transparent;
+	color: #000000;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 0 0 2.5em;
+}
+
+.sitemap #main li ul li ul li ul {
+	background-color: transparent;
+	border-left: none;
+	color: #ffffcc;
+	font-size: 80%;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 0 0 2.5em;
+}
+
+.sitemap #main ul {
+	font-size: 125%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sitemap #main ul li ul {
+	font-size: 100%;
+	list-style-type: none;
+	margin: 0.2em 0 0 0.5em;
+	padding: 0;
+}
+
+.sitemap ul {
+	list-style-type: none;
+}
+
+.skip {
+	display: none;
+}
+
+.slogan {
+	background-color: #0a50a1;
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 0.2em 0 0.1em 0;
+	bottom: 0;
+	clear: both;
+	color: #ffffff;
+	font-size: 1em;
+	left: 0;
+	margin: 0;
+	padding: 0.5em 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+.slogan, #footer, #footer a, #mainmenu li a, #mainmenu li.active, #navmenu a {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.smlogo {
+	border: none;
+	margin: 0.5em auto;
+}
+
+.subindx {
+	font-size: 85%;
+	vertical-align: sub;
+}
+
+.testlink {
+	background-color: transparent;
+	color: #cc3333;
+	font-size: 90%;
+	margin: 0;
+	padding: 1em 0 1em 0;
+}
+
+.textonly {
+	display: none;
+}
+
+.upper {
+	font-size: 66%;
+	vertical-align: super;
+}
+
+#anchors {
+	margin-top: 1em;
+}
+
+#banner {
+	margin: 2em 0;
+	text-align: center;
+}
+
+#banner .imgl {
+	border: none;
+	float: left;
+	margin: 0 64px 0 0;
+	width: 100px;
+}
+
+#banner .imgr {
+	border: none;
+	float: right;
+	margin: 0 0 0 64px;
+	width: 100px;
+}
+
+#dvepercenta {
+	float: right;
+	width: 160px;
+	font-size: 16px;
+	line-height: 166%;
+	background-color: #0a50a1;
+	background-color: #1a9431;
+	color: #ffffff;
+	text-align: center;
+	margin: 0 0 1em 2em;
+}
+
+#dvepercenta a {
+	color: #ffffff;
+	background-color: transparent;
+	padding: 24px;
+	text-decoration: none;
+	display: block;
+	font-family: sans-serif;
+}
+
+#footer {
+	background-color: #0a50a1;
+	background-position: 0 0;
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 3px 0 0 0;
+	color: #d6e4f5;
+	height: 3em;
+	margin: 0;
+	padding: 0;
+}
+
+#footer p {
+	background-repeat: repeat-x;
+	font-size: 75%;
+	line-height: 4em;
+	margin: 0;
+	padding: 0 0;
+	text-align: center;
+	text-indent: 0;
+}
+
+#footer p, #footer a {
+	background-color: transparent;
+	color: #d6e4f5;
+}
+
+#head {
+	margin: 0 auto;
+}
+
+#logo {
+	float: left;
+	height: 128px;
+	margin: 2.5em 0 0 3em;
+	padding: 0;
+	width: 167px;
+	position: relative;
+}
+
+#logo a {
+	background-color: transparent;
+	color: #d6e4f5;
+	display: block;
+	height: 128px;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	width: 167px;
+/*	xposition: relative; */
+}
+
+#logo a span {
+	background-image: url(../i/jbtlogo.gif);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: block;
+	font-size: 2.5em;
+	height: 128px;
+	left: 0;
+	line-height: 0.75em;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 167px;
+	z-index: 1;
+}
+
+#logo a:hover {
+	background-color: transparent;
+	color: #d6e4f5;
+}
+
+#london2012 {
+	float: right;
+	width: 200px;
+	background-color: transparent;
+	margin: -2em 0 1em 1em;
+	text-indent: 0;
+}
+
+#london2012 a {
+	background-color: transparent;
+	color: #000000;
+	float: left;
+	margin: 0;
+}
+
+#london2012 a:hover {
+	background-color: transparent;
+	color: #000000;
+}
+
+#london2012 img {
+	border: none;
+	width: 200px;
+	padding: 0 0 0.5em 0;
+}
+
+#london2012 .london {
+	text-align: center;
+	text-indent: 0;
+}
+
+#main {
+	margin: 0;
+	padding: 1em 3em;
+}
+
+#main .contact {
+	font-style: italic;
+	text-indent: 0;
+}
+
+#main .noindent {
+	text-indent: 0;
+}
+
+#main .testlink {
+	margin: 0.5em 0 0 2.5em;
+	text-indent: 0;
+}
+
+#main li {
+	margin: 0 0 0 1em;
+}
+
+#main p {
+	text-align: left;
+	text-indent: 2em;
+}
+
+#main ul {
+	margin: 0 0 0 1em;
+}
+
+#maincontainer {
+	background-color: transparent;
+	background-image: url(../i/bgwrapp.gif);
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#mainmenu {
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#mainmenu .active {
+	background-color: #d6e4f5;
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	color: #000000;
+	border-bottom-color: #d6e4f5;
+}
+
+#mainmenu a {
+	position: relative;
+}
+
+#mainmenu li {
+	display: block;
+	float: left;
+	font-weight: bold;
+	list-style-type: none;
+	text-align: center;
+	text-transform: none;
+	width: 11.05em;
+}
+
+#mainmenu li a {
+	background-color: #1a9431;
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	color: #ffffff;
+}
+
+#mainmenu li a, #mainmenu .active {
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 0.1em 0 0.1em 0.1em;
+	display: block;
+	padding: 0.5em 0;
+	text-decoration: none;
+}
+
+#mainmenu li a:hover, #mainmenu li a:focus {
+	background-color: #0a50a1;
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	color: #ffffff;
+}
+
+#mainmenu #home a, #mainmenu #home.active {
+	border-left-width: 0;
+}
+
+#mainmenu #links {
+	float: right;
+}
+
+#mainmenu #links a, #mainmenu #links.active {
+	border-right-width: 0;
+}
+
+#navmenu {
+	background-color: transparent;
+	color: #000000;
+	left: 0;
+	position: absolute;
+	top: 0.25em;
+	z-index: 200;
+}
+
+#navmenu .content {
+	float: right;
+	text-align: right;
+}
+
+#navmenu a {
+	font-size: 80%;
+	padding: 0 1em 0 0;
+}
+
+#partnerbanner {
+	margin: 2em auto 0 auto;
+}
+
+#partnerbanner a {
+	background-color: transparent;
+	color: #000000;
+	float: left;
+	margin: 0 40px 0 0;
+}
+
+#partnerbanner #imgyonex {
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+#partnerbanner a:hover {
+	background-color: transparent;
+	color: #000000;
+}
+
+#partnerbanner img {
+	border: none;
+}
+
+#partnerjv {
+	margin: 1em auto;
+	border: 2px solid #1A9431;
+	padding: 0 3em;
+}
+#partnerjv p {
+	font-weight: bold;
+	text-align: center;
+	margin: 2em 0;	
+}
+
+#partnerjv span {
+	margin: 0 0.5em;
+} 
+
+#pics {
+	float: right;
+	margin: 0;
+	padding: 0;
+	width: 15em;
+}
+
+#pics img {
+	border: none;
+}
+
+#receiverdata {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#receiverdata td {
+	text-align: left;
+}
+
+#topbox {
+	height: 16em;
+	margin: 0;
+	max-height: 300px;
+	min-height: 200px;
+	padding: 0;
+	position: relative;
+}
+
+#wrapper {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#wrapper2 {
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 0.3em;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+
+#vianoce {
+	padding: 1em 2em;
+	color: #0a50a1;
+	border: 1px solid #0a50a1;
+	font-style: italic;
+	background-image: url(../i/bells196.png);
+	background-position: 34em 50%;
+	background-repeat: no-repeat;
+	background-color: #d6e4f5;
+}
+
+#vianoce2 {
+	width: 75%;
+}
+
+/*
+	skin
+*/
+
+body {
+	background-color: #d6e4f5;
+	background-image: url(../i/bgbody.gif);
+	background-repeat: repeat-x;
+	color: #000000;
+}
+
+#logo {
+	margin: 2.5em 0 0 3em;
+}
+
+#maincontainer {
+	background-color: transparent;
+	background-image: url(../i/bgwrapp.gif);
+	background-repeat: repeat-x;
+	color: #000000;
+}
+
+#mainmenu .active {
+	background-color: #d6e4f5;
+	background-image: url(../i/bgactive.jpg);
+	color: #000000;
+}
+
+#mainmenu li a:hover, #mainmenu li a:active, #mainmenu li a:focus {
+	background-color: #0a50a1;
+	color: #ffffff;
+}
+
+#topbox {
+	background-image: url(../i/topbox/bg1foto.png);
+	background-position: 22em 1.6em;  /* left top */
+	background-repeat: no-repeat;
+}
+
+.home #topbox {
+	background-image: url(../i/topbox/teamplayers.png);
+}
+
+.team #topbox {
+	background-image: url(../i/topbox/treneri.png);
+}
+
+.domacesutaze #topbox {
+	background-image: url(../i/topbox/majstri.png);
+}
+
+.olympiada #topbox {
+	background-image: url(../i/topbox/vitazi.png);
+}
+
+.links #topbox {
+	background-image: url(../i/topbox/bg2foto.png);
+}
+
+.partners #topbox {
+	background-image: url(../i/topbox/bg3foto.png);
+}
+
+#wrapper2 {
+	background-color: #d6e4f5; /* #b8d5f5; */
+	background-image: url(../i/jbthead.jpg); /* size: 1150x256 */
+	background-position: right top;
+	background-repeat: repeat-x;
+	color: #000000;
+}
